@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Importar fuentes y referenciar el documento .css-->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Climbing Feed</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<!-- preparacion de etiquetas segun el ejemplo a replicar -->
 <body>
   <div class="post">
-      <div class="post-header">
+    
+    <div class="post-header">
+      <div class="post-header-left">
         <img src="imagenes/blocLogo_0.png" alt="Logo de Bloc District" />
-        <span><strong>@Bloc_district_blog</strong></span>
-        <span>⋮</span>
-        
+        <span><strong>Bloc District</strong></span>                   
       </div>
-      <div class="post-video">
-         <video controls class="post-video">
-          <source src="imagenes/Escalada8A.mp4" type="video/mp4" />
-          Tu navegador no soporta la etiqueta de video.
-        </video>
-      </div>
-      <div class="post-body">
-        <p>Hoy me enfrenté a una mi primer desafio de ruta de competicion...Por desgracia no la pude completar, me quede sin fuerza despues de recuperar la orientacio nde mi cuerpo</p>
-        <div class="post-icons">
-          <span class="material-symbols-outlined">favorite</span>
-          <span class="material-symbols-outlined">chat_bubble</span>
-          <span class="material-symbols-outlined">send</span>
-          <span class="material-symbols-outlined">bookmark</span>
-        </div>
+      <div class="post-header-right">
+        <span class="fa-regular fa-chart-bar"></span>  
       </div>
     </div>
+
+    <div class="post-video">
+      <video controls>
+        <source src="imagenes/Escalada8A.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </div>
+
+    <div class="post-body">
+      <div class="post-icons">        
+        <div class="post-icons-left">
+          <span class="material-symbols-outlined">favorite</span>
+          <span class="material-symbols-outlined">chat_bubble</span>
+          <span class="material-symbols-outlined">send</span>          
+        </div>         
+        <div class="post-icons-right">
+          <span class="material-symbols-outlined">bookmark</span>
+        </div>        
+      </div>
+      <div class="post-likes">
+        <p>Me gusta por <strong>patrick.mv11</strong>, <strong>4Geeksacademy</strong> y otros usuarios</p>
+      </div>
+      <p>Hoy me enfrenté a mi primer desafío de ruta de competición... Por desgracia no la pude completar, me quedé sin fuerza despues de recuperar la orientacion de mi cuerpo.</p>
+      
+    </div>
+
+  </div>
 </body>
 </html>

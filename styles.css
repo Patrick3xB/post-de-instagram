@@ -10,36 +10,46 @@ body {
 }
 
 .post {
-  background-color: #fff;
-  color: #000;
+  background-color: WHITE;
+  color: black;
   width: 100%;
   max-width: 500px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  overflow: hidden;  
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .post-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;  
+  padding: 10px 15px;
+}
+
+.post-header-left {
+  display: flex;
   align-items: center;
-  padding: 10px;
+  gap: 10px;
 }
 
-.post-header span {
-  margin: 0;
-  font-size: 14px;
+.post-header-right {
+  font-size: 18px;
 }
 
-.post-header img {
+.post-header-left img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
 
+.post-video {
+  width: 100%;
+  background-color: black;
+}
+
 .post-video video {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   display: block;
 }
 
@@ -51,8 +61,20 @@ body {
 
 .post-icons {
   display: flex;
-  gap:15px;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 15px 15px;
+}
+
+
+.post-icons-left {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+  color: black;
+}
+
+.post-icons-right {
   font-size: 22px;
   color: black;
 }
